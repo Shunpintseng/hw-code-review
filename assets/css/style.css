@@ -1,0 +1,253 @@
+/* group all selectors in correct type, class and ID order */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1{
+    /* added h1 style in stead of class for consistancy */
+    display: inline-block;
+    font-size: 48px;
+}
+
+h2{
+    /* add new h2 */
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3 {
+    /* move h3 to top and remove footer class designation */
+    font-size: 20px;
+}
+
+
+
+h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.seo {
+    /* remove ".header h1" it is redundant for this class */
+    color: #d9dcd6;
+}
+
+.navbar {
+    /* added "navbar" in html, change out selector to "navbar" */
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.ulstyle { 
+    /* added "ulstyle" in html, change out selector to "ulstyle" */
+    list-style-type: none;
+
+}
+
+.ulstyle li {
+    /* change out selector to "ulstyle" */
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+.hero {
+     /* change out selector to "ulstyle" , removed jpg link and keep only style code in css*/
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    /*background-image: url("../images/digital-marketing-meeting.jpg");*/
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    /*move content class up to align with html code;*/
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.subcontent {
+    /* change class name to "subcontent" */
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;1111
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+   
+}
+
+
+/* 
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+} */
+
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+    /* add img max-height to float-left class */
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
+    /* add img max-height to float-right class */
+}
+
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefitsidebar {
+    /* consolidate redundant class to this class defining side bar color and size  */
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* remove redundant class
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+} */
+
+/* removed these sections for h3 class. h3 is designated on top of code 
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center; 
+}*/
+
+.sideimage {
+    /* consolidate all class into sideimage */
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*  remove redundant image class
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+} */
+
+
+
+/* 
+.search-engine-optimizationt img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}  
+*/
+
+/* 
+remove all redundant h2 class. use h2 type at top
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+} */
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* .footer h2 {
+    font-size: 20px;
+} */
